@@ -1,12 +1,24 @@
 extends Control
 
 var selected_square
+
 @onready var grid = $MarginContainer/VBoxContainer/GridContainer
 @onready var all_squares: Array = grid.get_children()
+@onready var playtime_label = $MarginContainer/VBoxContainer/HBoxContainer2/PlaytimeLabel
+@onready var timer = $Timer
 
 func _ready():
 	for square in all_squares:
 		square.pressed.connect(on_select_square)
+		
+	timer.timeout.connect(_on_timer_timeout)
+	timer.start()
+	
+func _on_timer_timeout():
+	Global.TIME += 1
+	var minutes = int(Global.TIME / 60)
+	var seconds = int(Global.TIME) % 60
+	playtime_label.text = "%02d:%02d" % [minutes, seconds]
 		
 func check_done():
 	for square in all_squares:
@@ -30,6 +42,7 @@ func check_done():
 			break
 
 	if won == true:
+		timer.stop()
 		get_tree().change_scene_to_file("res://scenes/win.tscn")
 		
 func check_row(row: int):
