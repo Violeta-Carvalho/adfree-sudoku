@@ -1,6 +1,7 @@
 class_name SaveData extends Resource
 
 @export var high_score: float = 0.0
+@export var current_game: Array = []
 
 const SAVE_PATH = "user://save_data.tres"
 
@@ -14,7 +15,7 @@ static func load_or_create():
 		res = load(SAVE_PATH) as SaveData
 	else:
 		res = SaveData.new()
-		res.high_score = 0
+		res.save()
 		
 	return res
 	
