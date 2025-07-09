@@ -1,7 +1,6 @@
 extends Control
 
 var selected_square
-var elapsed_time = 0.0
 
 @onready var grid = $MarginContainer/VBoxContainer/GridContainer
 @onready var all_squares: Array = grid.get_children()
@@ -16,10 +15,10 @@ func _ready():
 	timer.start()
 	
 func _on_timer_timeout():
-	elapsed_time += 1
-	var minutes = int(elapsed_time / 60)
-	var seconds = int(elapsed_time) % 60
-	playtime_label.text = "%02d:%02d" % [minutes, seconds]  # Format as mm:ss
+	Global.TIME += 1
+	var minutes = int(Global.TIME / 60)
+	var seconds = int(Global.TIME) % 60
+	playtime_label.text = "%02d:%02d" % [minutes, seconds]
 		
 func check_done():
 	for square in all_squares:
