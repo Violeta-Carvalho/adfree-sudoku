@@ -23,10 +23,85 @@ func _ready():
 			var square_value = Global.save_data.current_game[i]
 			grid.get_child(i).set_number(square_value)
 			
+			if Global.save_data.current_blocks[i]:
+				grid.get_child(i).block()
+	else:
+		var difficulty := 50
+		var puzzle := generate_puzzle(difficulty)
+		
+		for i in range(81):
+			var square_value = puzzle[i]
+			grid.get_child(i).set_number(square_value)
+			
+			if square_value > 0:
+				grid.get_child(i).block()
+			Global.save_data.current_blocks.append(square_value > 0)
+			
 	check_done()
 		
 	timer.timeout.connect(_on_timer_timeout)
 	timer.start()
+	
+func generate_puzzle(difficulty: int) -> Array:
+	var full_board := generate_sudoku()
+	var puzzle := full_board.duplicate()
+
+	var indices := []
+	for i in puzzle.size():
+		indices.append(i)
+
+	indices.shuffle()
+
+	for i in range(difficulty):
+		puzzle[indices[i]] = 0
+
+	return puzzle
+
+func generate_sudoku() -> Array:
+	var board := []
+	for i in 81:
+		board.append(0)
+	_fill_board(board)
+	return board
+
+func _fill_board(board: Array) -> bool:
+	for i in board.size():
+		if board[i] == 0:
+			var numbers := _shuffle(range(1, 10))
+			for num in numbers:
+				if _is_valid(board, i, num):
+					board[i] = num
+					if _fill_board(board):
+						return true
+					board[i] = 0
+			return false
+	return true
+
+func _is_valid(board: Array, index: int, num: int) -> bool:
+	var row := index / 9
+	var col := index % 9
+
+	for i in 9:
+		if board[row * 9 + i] == num or board[i * 9 + col] == num:
+			return false
+
+	var box_row := (row / 3) * 3
+	var box_col := (col / 3) * 3
+	for r in range(box_row, box_row + 3):
+		for c in range(box_col, box_col + 3):
+			if board[r * 9 + c] == num:
+				return false
+
+	return true
+
+func _shuffle(arr: Array) -> Array:
+	var shuffled := arr.duplicate()
+	for i in range(shuffled.size() - 1, 0, -1):
+		var j := randi() % (i + 1)
+		var temp: int = shuffled[i]
+		shuffled[i] = shuffled[j]
+		shuffled[j] = temp
+	return shuffled
 	
 func _on_timer_timeout():
 	Global.TIME += 1
@@ -178,3 +253,11 @@ func _on_button_9_pressed() -> void:
 
 func _on_button_x_pressed() -> void:
 	on_button_pressed(0)
+
+func _on_new_game_button_pressed() -> void:
+	Global.save_data.current_game = []
+	Global.save_data.save()
+	timer.stop()
+	Global.TIME = 0
+	
+	get_tree().reload_current_scene()

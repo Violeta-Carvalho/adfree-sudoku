@@ -2,6 +2,7 @@ class_name SaveData extends Resource
 
 @export var high_score: float = 0.0
 @export var current_game: Array = []
+@export var current_blocks: Array = []
 
 const SAVE_PATH = "user://save_data.tres"
 

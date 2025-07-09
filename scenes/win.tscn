@@ -5,12 +5,16 @@
 [node name="Win" type="Node2D"]
 script = ExtResource("1_r4oei")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_top = 494.0
 offset_right = 724.0
-offset_bottom = 790.0
+offset_bottom = 494.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_shadow_color = Color(0.255659, 0.255659, 0.255659, 1)
@@ -18,7 +22,7 @@ theme_override_font_sizes/font_size = 60
 text = "YOU WIN!"
 horizontal_alignment = 1
 
-[node name="PlaytimeLabel" type="Label" parent="VBoxContainer"]
+[node name="PlaytimeLabel" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_shadow_color = Color(0.255659, 0.255659, 0.255659, 1)
@@ -26,7 +30,7 @@ theme_override_font_sizes/font_size = 24
 text = "00:00"
 horizontal_alignment = 1
 
-[node name="HighScoreLabel" type="Label" parent="VBoxContainer"]
+[node name="HighScoreLabel" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_shadow_color = Color(0.255659, 0.255659, 0.255659, 1)
@@ -34,10 +38,10 @@ theme_override_font_sizes/font_size = 24
 text = "00:00"
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "New Game!"
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
