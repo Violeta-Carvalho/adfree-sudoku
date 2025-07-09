@@ -1,0 +1,1 @@
+This is a little side-project to create my own Sudoku app to play for free, without having to see Ads.

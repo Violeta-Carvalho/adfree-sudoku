@@ -1,0 +1,791 @@
+[gd_scene load_steps=85 format=3 uid="uid://6sy8l7jobms5"]
+
+[ext_resource type="PackedScene" uid="uid://cn15fdr0ogrgn" path="res://scenes/square.tscn" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://dgide7ufki0qh" path="res://scripts/game.gd" id="1_yqjtg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yqjtg"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lnu2h"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lbhrr"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iywne"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p57ef"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u5sy4"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gee14"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0tnpc"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vtaks"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kvpfn"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dinhu"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kvuet"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_trtic"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ir15t"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ca42v"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rysoc"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ssvqc"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_264po"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1kice"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5newe"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_37s47"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bt5mj"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1j6l"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pl11u"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhx41"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qnb83"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sww3w"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_suyxu"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sgl2t"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qouja"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wljb1"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v2yb1"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_js0lu"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gxtfn"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_twgab"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_02fa5"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nepv3"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7025r"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4url"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ool0"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pr1ej"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_05nbr"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0sl42"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oaba0"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_458eo"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h3rex"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fedci"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qswn"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rm0al"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i4re6"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pf7vy"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o8ni1"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3hbvx"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q8j3a"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ms3bu"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ixpq"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bk1p3"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n8ral"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yd4ix"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_66xif"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bnuda"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0rmfi"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xbak0"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3x28f"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6q63"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mmvbu"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_weeiq"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uxocx"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7nv0b"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o8oq8"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sxt1d"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2iuns"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7gkqi"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_753oq"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3x338"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1yg85"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s0g06"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2gnni"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vgxg3"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4nbsr"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fkywm"]
+resource_local_to_scene = true
+bg_color = Color(0.956863, 0.956863, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uwrxv"]
+bg_color = Color(0.278431, 0.0745098, 0.588235, 1)
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yqjtg")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0.255659, 0.255659, 0.255659, 1)
+theme_override_font_sizes/font_size = 60
+text = "SUDOKU"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+columns = 9
+
+[node name="Square1" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_yqjtg")
+
+[node name="Square2" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_lnu2h")
+
+[node name="Square3" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_lbhrr")
+
+[node name="Square4" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_iywne")
+
+[node name="Square5" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_p57ef")
+
+[node name="Square6" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_u5sy4")
+
+[node name="Square7" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gee14")
+
+[node name="Square8" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0tnpc")
+
+[node name="Square9" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vtaks")
+
+[node name="Square10" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kvpfn")
+
+[node name="Square11" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dinhu")
+
+[node name="Square12" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kvuet")
+
+[node name="Square13" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_trtic")
+
+[node name="Square14" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ir15t")
+
+[node name="Square15" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ca42v")
+
+[node name="Square16" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rysoc")
+
+[node name="Square17" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ssvqc")
+
+[node name="Square18" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_264po")
+
+[node name="Square19" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1kice")
+
+[node name="Square20" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5newe")
+
+[node name="Square21" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_37s47")
+
+[node name="Square22" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bt5mj")
+
+[node name="Square23" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_e1j6l")
+
+[node name="Square24" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_pl11u")
+
+[node name="Square25" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bhx41")
+
+[node name="Square26" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_qnb83")
+
+[node name="Square27" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sww3w")
+
+[node name="Square28" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_suyxu")
+
+[node name="Square29" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sgl2t")
+
+[node name="Square30" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_qouja")
+
+[node name="Square31" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wljb1")
+
+[node name="Square32" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v2yb1")
+
+[node name="Square33" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_js0lu")
+
+[node name="Square34" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gxtfn")
+
+[node name="Square35" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_twgab")
+
+[node name="Square36" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_02fa5")
+
+[node name="Square37" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_nepv3")
+
+[node name="Square38" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7025r")
+
+[node name="Square39" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m4url")
+
+[node name="Square40" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8ool0")
+
+[node name="Square41" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_pr1ej")
+
+[node name="Square42" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_05nbr")
+
+[node name="Square43" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0sl42")
+
+[node name="Square44" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_oaba0")
+
+[node name="Square45" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_458eo")
+
+[node name="Square46" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_h3rex")
+
+[node name="Square47" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fedci")
+
+[node name="Square48" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8qswn")
+
+[node name="Square49" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rm0al")
+
+[node name="Square50" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_i4re6")
+
+[node name="Square51" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_pf7vy")
+
+[node name="Square52" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_o8ni1")
+
+[node name="Square53" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3hbvx")
+
+[node name="Square54" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_q8j3a")
+
+[node name="Square55" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ms3bu")
+
+[node name="Square56" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7ixpq")
+
+[node name="Square57" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bk1p3")
+
+[node name="Square58" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_n8ral")
+
+[node name="Square59" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_yd4ix")
+
+[node name="Square60" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_66xif")
+
+[node name="Square61" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bnuda")
+
+[node name="Square62" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0rmfi")
+
+[node name="Square63" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xbak0")
+
+[node name="Square64" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3x28f")
+
+[node name="Square65" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l6q63")
+
+[node name="Square66" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mmvbu")
+
+[node name="Square67" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_weeiq")
+
+[node name="Square68" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_uxocx")
+
+[node name="Square69" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7nv0b")
+
+[node name="Square70" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_o8oq8")
+
+[node name="Square71" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sxt1d")
+
+[node name="Square72" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_2iuns")
+
+[node name="Square73" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7gkqi")
+
+[node name="Square74" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_753oq")
+
+[node name="Square75" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3x338")
+
+[node name="Square76" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1yg85")
+
+[node name="Square77" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_s0g06")
+
+[node name="Square78" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_2gnni")
+
+[node name="Square79" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vgxg3")
+
+[node name="Square80" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4nbsr")
+
+[node name="Square81" parent="MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("1_uwrxv")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fkywm")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button1" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(61, 61)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
+text = "1
+"
+
+[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(61, 61)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
+text = "2
+"
+
+[node name="Button3" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(61, 61)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
+text = "3"
+
+[node name="Button4" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(61, 61)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
+text = "4"
+
+[node name="Button5" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(61, 61)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
+text = "5"
+
+[node name="Button6" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(61, 61)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
+text = "6"
+
+[node name="Button7" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(61, 61)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
+text = "7"
+
+[node name="Button8" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(61, 61)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
+text = "8"
+
+[node name="Button9" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(61, 61)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
+text = "9"
+
+[node name="ButtonX" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(61, 61)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
+text = "X"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button9" to="." method="_on_button_9_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/ButtonX" to="." method="_on_button_x_pressed"]
