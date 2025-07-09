@@ -10,8 +10,6 @@ var with_error: bool = false
 
 func _ready() -> void:
 	set_number(number)
-	if blocked:
-		block()
 		
 func _on_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed and not blocked:
@@ -20,7 +18,7 @@ func _on_gui_input(event: InputEvent) -> void:
 func block() -> void:
 	get("theme_override_styles/panel").set("bg_color", "#aeaeae")
 	label.set("theme_override_colors/font_color", "#000000")
-	
+	blocked = true
 
 func select() -> void:
 	get("theme_override_styles/panel").set("bg_color", "#471396")

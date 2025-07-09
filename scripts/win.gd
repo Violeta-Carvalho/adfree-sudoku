@@ -1,7 +1,7 @@
 extends Node2D
 
-@onready var playtime_label = $VBoxContainer/PlaytimeLabel
-@onready var highscore_label = $VBoxContainer/HighScoreLabel
+@onready var playtime_label = $MarginContainer/VBoxContainer/PlaytimeLabel
+@onready var highscore_label = $MarginContainer/VBoxContainer/HighScoreLabel
 
 func _ready():
 	var time_minutes = int(Global.TIME / 60)
@@ -17,6 +17,7 @@ func _ready():
 		highscore_label.text = "Your highscore is still %02d:%02d!" % [highscore_minutes, highscore_seconds]
 	
 	Global.save_data.current_game = []
+	Global.save_data.current_blocks = []
 	Global.save_data.save()
 		
 		

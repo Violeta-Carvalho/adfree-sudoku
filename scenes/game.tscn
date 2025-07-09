@@ -798,6 +798,14 @@ theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_uwrxv")
 text = "X"
 
+[node name="NewGameButton" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 25
+text = "New Game"
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button1" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button3" to="." method="_on_button_3_pressed"]
@@ -808,3 +816,4 @@ text = "X"
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button8" to="." method="_on_button_8_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button9" to="." method="_on_button_9_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/ButtonX" to="." method="_on_button_x_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/NewGameButton" to="." method="_on_new_game_button_pressed"]
