@@ -18,6 +18,13 @@ func _ready():
 		var seconds = int(Global.save_data.high_score) % 60
 		high_score_label.text = "High Score: %02d:%02d" % [minutes, seconds]
 		
+	if Global.save_data.current_game != []:
+		for i in range(81):
+			var square_value = Global.save_data.current_game[i]
+			grid.get_child(i).set_number(square_value)
+			
+	check_done()
+		
 	timer.timeout.connect(_on_timer_timeout)
 	timer.start()
 	
@@ -114,6 +121,15 @@ func on_select_square(square):
 		
 	square.select()
 	selected_square = square
+	
+func save_current_game():
+	var current_game = []
+	
+	for square in all_squares:
+		current_game.append(square.number)
+		
+	Global.save_data.current_game = current_game
+	Global.save_data.save()
 
 func on_button_pressed(number: int):
 	if selected_square:
@@ -122,7 +138,7 @@ func on_button_pressed(number: int):
 		selected_square = null
 		
 	check_done()
-
+	save_current_game()
 
 func _on_button_1_pressed() -> void:
 	on_button_pressed(1)
