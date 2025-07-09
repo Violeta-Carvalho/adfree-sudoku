@@ -2,14 +2,21 @@ extends Control
 
 var selected_square
 
+@onready var playtime_label = $MarginContainer/VBoxContainer/HBoxContainer2/PlaytimeLabel
+@onready var high_score_label = $MarginContainer/VBoxContainer/HBoxContainer2/HighScoreLabel
+@onready var timer = $Timer
+
 @onready var grid = $MarginContainer/VBoxContainer/GridContainer
 @onready var all_squares: Array = grid.get_children()
-@onready var playtime_label = $MarginContainer/VBoxContainer/HBoxContainer2/PlaytimeLabel
-@onready var timer = $Timer
 
 func _ready():
 	for square in all_squares:
 		square.pressed.connect(on_select_square)
+		
+	if Global.save_data.high_score:
+		var minutes = int(Global.save_data.high_score / 60)
+		var seconds = int(Global.save_data.high_score) % 60
+		high_score_label.text = "High Score: %02d:%02d" % [minutes, seconds]
 		
 	timer.timeout.connect(_on_timer_timeout)
 	timer.start()

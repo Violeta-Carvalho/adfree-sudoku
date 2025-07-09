@@ -5,45 +5,39 @@
 [node name="Win" type="Node2D"]
 script = ExtResource("1_r4oei")
 
-[node name="Label" type="Label" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 220.0
-offset_top = 181.0
-offset_right = 501.0
-offset_bottom = 264.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 724.0
+offset_bottom = 790.0
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_shadow_color = Color(0.255659, 0.255659, 0.255659, 1)
 theme_override_font_sizes/font_size = 60
 text = "YOU WIN!"
 horizontal_alignment = 1
 
-[node name="PlaytimeLabel" type="Label" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 214.0
-offset_top = 329.0
-offset_right = 495.0
-offset_bottom = 412.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="PlaytimeLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_shadow_color = Color(0.255659, 0.255659, 0.255659, 1)
 theme_override_font_sizes/font_size = 24
 text = "00:00"
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="."]
-offset_left = 304.0
-offset_top = 268.0
-offset_right = 401.0
-offset_bottom = 299.0
+[node name="HighScoreLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_shadow_color = Color(0.255659, 0.255659, 0.255659, 1)
+theme_override_font_sizes/font_size = 24
+text = "00:00"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "New Game!"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
